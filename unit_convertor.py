@@ -34,7 +34,7 @@ def convert_units(value, unit_from, unit_to):
 st.set_page_config(page_title="Unit Convertor", page_icon=":guardsman:", layout="wide")
 st.title("Unit Convertor")
 
-value = st.number_input("Enter the Value to Convert")
+value = st.number_input("Enter the Value to Convert", step=1.0)
 unit_from = st.selectbox("convert from" , ["meter", "kilometer", "gram", "kilogram ", "celsius", "fahrenheit", "kelvin"])
 unit_to = st.selectbox("convert to" , ["meter", "kilometer", "gram", "kilogram ", "celsius", "fahrenheit", "kelvin"])
 
